@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 22
+  productName: RE:WORLD 3D STEM Adventure
+  companyName: EngiPlay Studios
+  m_DefaultGraphicsAPIs:
+    - 0
+  m_ActiveColorSpace: 1
+  m_ScriptingBackend: 1
+  m_ScriptingDefineSymbols:
+    1: ENABLE_URP;ENABLE_NOVA_AI

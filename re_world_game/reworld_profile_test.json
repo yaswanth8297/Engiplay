@@ -1,0 +1,29 @@
+{
+  "playerId": "ENG-PROTOTYPE",
+  "attempts": [
+    {
+      "missionName": "Bridge Mission",
+      "isSuccess": false,
+      "failureReason": "center_span_snap",
+      "durationSeconds": 45.0
+    },
+    {
+      "missionName": "Bridge Mission",
+      "isSuccess": true,
+      "failureReason": "Success",
+      "durationSeconds": 62.0
+    },
+    {
+      "missionName": "Power Mission",
+      "isSuccess": true,
+      "failureReason": "Success",
+      "durationSeconds": 38.0
+    }
+  ],
+  "dna": {
+    "persistenceScore": 74.0,
+    "structuralIntuitionScore": 85.0,
+    "electricalSafetyScore": 90.0,
+    "archetype": "Relentless Structural Innovator"
+  }
+}

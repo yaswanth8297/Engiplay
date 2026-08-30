@@ -1,0 +1,16 @@
+{
+  "name": "engiplay",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client --legacy-peer-deps && npm install --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm run build --prefix client",
+    "build": "npm run build:client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

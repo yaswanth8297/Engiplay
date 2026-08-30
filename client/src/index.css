@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: #F9F9F7;
+    color: #111111;
+    font-family: 'Lora', Georgia, serif;
+    overflow-x: hidden;
+  }
+  
+  *, ::before, ::after {
+    border-radius: 0px !important;
+  }
+}
+
+/* Newsprint Dot & Line Textures */
+.dot-pattern {
+  background-image: radial-gradient(#111111 1px, transparent 1px);
+  background-size: 16px 16px;
+  background-color: #F9F9F7;
+}
+
+.newsprint-texture {
+  position: relative;
+}
+.newsprint-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(0deg, transparent 98%, rgba(17,17,17,0.03) 100%),
+    linear-gradient(90deg, transparent 98%, rgba(17,17,17,0.03) 100%);
+  background-size: 4px 4px;
+  pointer-events: none;
+}
+
+/* Sharp Hard Offset Shadow */
+.hard-shadow {
+  box-shadow: 4px 4px 0px 0px #111111;
+}
+
+.hard-shadow-hover {
+  transition: all 0.15s ease-out;
+}
+.hard-shadow-hover:hover {
+  box-shadow: 4px 4px 0px 0px #111111;
+  transform: translate(-2px, -2px);
+}
+
+/* Drop Cap Utility for Editorial Articles */
+.drop-cap::first-letter {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3.5rem;
+  line-height: 0.85;
+  float: left;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  font-weight: 900;
+  color: #CC0000;
+}
+
+/* Newsprint Border utilities */
+.sharp-corners {
+  border-radius: 0px !important;
+}
+
+/* Newspaper Masthead Double Border */
+.newspaper-double-border {
+  border-top: 3px double #111111;
+  border-bottom: 3px double #111111;
+}
+
+/* Inverted Editorial Section */
+.newsprint-inverted {
+  background-color: #111111;
+  color: #F9F9F7;
+}
+
+/* Custom Newsprint Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9F9F7;
+  border-left: 1px solid #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CC0000;
+}
+

@@ -1,0 +1,25 @@
+
+
+# next
+/.next
+/out
+next-env.d.ts
+*.tsbuildinfo
+
+# data (users, orders, secrets)
+/data
+
+# env
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+*.log
+
+# local runtime log
+server.log
+
+node_modules/
+**/node_modules/
